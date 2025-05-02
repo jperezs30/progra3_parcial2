@@ -16,8 +16,6 @@ public class Main {
 
         System.out.println("🟢 App started. Waiting for scheduler...");
         
-        //Map<String, Report> result = service.getReportsGroupedByProvince("GTM", "2022-04-16");
-        //result = service.getReportsGroupedByProvince("USA", "2022-04-16");
 
     }
 }

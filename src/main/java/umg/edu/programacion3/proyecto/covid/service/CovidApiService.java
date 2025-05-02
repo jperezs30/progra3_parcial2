@@ -134,9 +134,9 @@ public class CovidApiService {
             }
 
             // Mostrar en consola
-            System.out.println("✅ Reportes únicos por provincia (" + iso + " en " + date + "):");
+            System.out.println(" Reportes únicos por provincia (" + iso + " en " + date + "):");
             for (Map.Entry<String, Report> entry : reportMap.entrySet()) {
-                System.out.println(entry.getKey() + " → Confirmados: " + entry.getValue().getConfirmed());
+                System.out.println(entry.getKey() + "  Confirmados: " + entry.getValue().getConfirmed());
             }
 
         } catch (Exception e) {
