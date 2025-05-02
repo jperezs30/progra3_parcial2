@@ -83,7 +83,7 @@ public class CovidApiService {
                 log.warn("❌ No reports found for the specified region and date.");
             }
 
-             saveExecutionRecord(iso, date, em);
+            saveExecutionRecord(iso, date, em);
             log.info("✅ {} on {} was processed and recorded.", iso, date);
 
             tx.commit();

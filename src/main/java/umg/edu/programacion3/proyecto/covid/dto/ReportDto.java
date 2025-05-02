@@ -6,7 +6,6 @@ import lombok.Data;
 public class ReportDto {
     private String date;
     private RegionInfoDto region;
-    private ProvinceInfoDto province;
 
     private int confirmed;
     private int deaths;

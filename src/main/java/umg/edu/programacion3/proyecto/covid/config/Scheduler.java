@@ -24,6 +24,7 @@ public class Scheduler {
 
                 log.info("[Hilo] Inicio de consumo API...");
                 service.fetchAndPersistCovidData("GTM", date);
+                //service.fetchAndPersistCovidData("USA", date);
 
             } catch (InterruptedException e) {
                 log.info("❌ Error en hilo: " + e.getMessage());

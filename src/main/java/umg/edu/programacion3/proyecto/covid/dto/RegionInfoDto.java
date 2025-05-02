@@ -6,4 +6,5 @@ import lombok.Data;
 public class RegionInfoDto {
     private String iso;
     private String name;
+    private String province;
 }

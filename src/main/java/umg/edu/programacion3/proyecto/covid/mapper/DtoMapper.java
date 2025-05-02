@@ -26,13 +26,10 @@ public class DtoMapper {
     public static Report toReport(ReportDto dto) {
         Report report = new Report();
         report.setDate(dto.getDate());
-
-        // Desanidar valores
-        if (dto.getProvince() != null) {
-            report.setProvince(dto.getProvince().getName());
-        }
+        
         if (dto.getRegion() != null) {
-            report.setRegion(dto.getRegion().getName()); // o dto.getRegion().getIso()
+            report.setRegion(dto.getRegion().getIso()); 
+            report.setProvince(dto.getRegion().getProvince());
         }
 
         report.setConfirmed(dto.getConfirmed());
